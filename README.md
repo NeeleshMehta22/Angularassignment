@@ -4,6 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+First Run Backend server which is running on port:3000 the file for backend server is located in server folder under app folder which contain databse and index database named file contain code for conaction to Database(postgres) and index named file contain the routes defined with paths....
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
