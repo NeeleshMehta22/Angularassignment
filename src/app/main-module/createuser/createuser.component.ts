@@ -28,15 +28,16 @@ export class CreateuserComponent implements OnInit {
   }
 
   back(){
-    this.router.navigateByUrl('');
+    this.router.navigateByUrl('adduser');
   }
 
   addUser(users:any,myForm:NgForm){
-    console.log("add user",users);
+    console.log("add new user",users);
     this.userService.createuser(users).subscribe((response: any)=>{
     //  this.add.getuser();
     })
     myForm.reset();
+    this.back();
   }
 
   oncancel(myForm:NgForm){

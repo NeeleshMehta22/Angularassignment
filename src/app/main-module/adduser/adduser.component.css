@@ -1,0 +1,20 @@
+.btn1 {
+  top: 50%;
+  left: 45%;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  background: rgba(68, 8, 20, 0.425);
+  box-shadow: 4px 4px brown;
+  text-align: center;
+  float: right;
+}
+.btn {
+  top: 50%;
+  left: 45%;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  background: rgba(10, 10, 60, 0.425);
+  box-shadow: 4px 4px brown;
+}

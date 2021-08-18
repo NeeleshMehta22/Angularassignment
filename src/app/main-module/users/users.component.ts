@@ -15,12 +15,12 @@ export class UsersComponent implements OnInit {
   ngOnInit(): void {
    
   }
-  btnClick() {
-    this.router.navigateByUrl('/adduser');
-};
-btnClick1() {
-  this.router.navigateByUrl('/createuser');
-};
+//   btnClick() {
+//     this.router.navigateByUrl('/adduser');
+// };
+// btnClick1() {
+//   this.router.navigateByUrl('/createuser');
+// };
  
     
 

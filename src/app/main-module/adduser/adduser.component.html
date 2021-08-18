@@ -1,21 +1,25 @@
-<button (click)="back()" class="btn btn-info">Go Back</button>
+<button (click)="back()" class="btn btn-info">Back</button>
+<button type="button" class="btn1" (click)="btnClick1();"
+#loadbutton>Add New Users</button>
+<br> <br>
 <div class="text-center">
-  <button type="button" class="btn btn-success" (click)="getuser()">
-    {{ load }}
+  <button type="button" id="btn" 
+  #btnref class="btn btn-success" (click)="getuser()">
+    {{ Refresh }}
   </button>
-  <h3>Users</h3>
+  <h3>Users Table</h3>
   <br />
   <table class="table table-dark table-striped">
     <thead class="thead-dark">
       <tr>
-        <th scope="col">id</th>
-        <th scope="col">First</th>
-        <th scope="col">middle</th>
-        <th scope="col">last</th>
-        <th scope="col">email</th>
-        <th scope="col">phone</th>
-        <th scope="col">role</th>
-        <th scope="col">address</th>
+        <th scope="col">Id</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Middle Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Role</th>
+        <th scope="col">Address</th>
         <!-- <th scope="col">Customer</th> -->
         <th scope="col">Actions!</th>
       </tr>

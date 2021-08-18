@@ -45,8 +45,15 @@ export class UsersService implements Iroutes{
 
   }
 
-  updateuser(user:any):Observable<Iusers>{
-    return this.http.put<Iusers>(`${this.baseurl}` + `/users/` + user.id , user)
+   updateuser(user:any){
+    // console.log('heeyyy');
+    const headers = new HttpHeaders({ 'Access-Control-Allow-Origin': '*',
+    'content-type': 'application/json'});
+   this.http.put(`${this.baseurl}` + `/users/` + user.id , user,{responseType:"text"}).subscribe(()=>{
+     
+    });
+   
+    
   }
 
   deleteuser(user:Iusers):Observable<Iusers>{
